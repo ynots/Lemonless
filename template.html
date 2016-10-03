@@ -7,7 +7,9 @@
 <body>
     <!-- Header -->
     <div id="header">
-        <a href="index.html"><img src="images/lemonless-logo.jpg" alt="Lemonless Logo"/></a>
+        <a href="index.html"><img src="images/lemonless-logo.jpg" alt="Lemonless Logo" /></a>
+
+        <!-- Main nav bar -->
         <ul id="nav-bar">
             <li><a href="index.html">Home</a></li>
             <li>
@@ -31,20 +33,25 @@
             <li><a href="reviewers.html">Reviewers</a></li>
             <li><a href="blogs.html">Blogs</a></li>
         </ul>
+
+        <!-- Search bar -->
         <form action="#" id="searchbar">
             <label>
                 Search:
-                <textarea name="search" id="searchinput" cols="20" rows="1">Search</textarea>
+                <input type="text" name="searchkeywords" value="Enter Keywords Here" />
+                <input type="submit" name="search" value="Go" />
             </label>
-        </form>>
-    </div><!-- Header ends -->
+        </form>
+    </div><!-- Header Ends -->
     <hr />
+
     <!-- Content -->
     <div id="content">
         <h1>Content Title</h1>
         <p>This is the content</p>
-    </div>
+    </div><!-- Content Ends -->
     <hr />
+
     <!-- Footer -->
     <div id="footer">
         <ul>
@@ -56,7 +63,7 @@
             <li><a href="tos.html">Terms of Service</a></li>
         </ul>
         <p>Follow Us</p>
-        <ul>
+        <ul id="social-media">
             <li><a href="#"><img src="images/youtube.png" /></a></li>
             <li><a href="#"><img src="images/twitter.png" /></a></li>
             <li><a href="#"><img src="images/facebook.png" /></a></li>
@@ -64,7 +71,14 @@
             <li><a href="#"><img src="images/instagram.png" /></a></li>
             <li><a href="#"><img src="images/pinterest.png" /></a></li>
         </ul>
+        <form action="#" method="get">
+            <label>Subscribe to our Newsletter
+                <input type="text" name="email" value="Enter Email Here"/>
+                <input type="submit" name="subscribe" value="Subscribe" />
+            </label>
+        </form>
         <p>&copy; Lemonless 2016</p>
-    </div>    
+    </div><!-- Footer Ends -->
+
 </body>
 </html>
