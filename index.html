@@ -2,14 +2,16 @@
 <html>
 <head>
     <title></title>
-	<meta charset="utf-8" />
+    <meta charset="utf-8" />
+    <meta html-equiv="author" content="Tony Shum" />
 </head>
 <body>
     <!-- Header -->
-    <div id="header">
+    <header>
         <a href="index.html"><img src="images/lemonless-logo.jpg" alt="Lemonless Logo" /></a>
-
-        <!-- Main nav bar -->
+    </header><!-- Header Ends -->
+    <!-- Main nav bar -->
+    <nav>
         <ul id="nav-bar">
             <li><a href="index.html">Home</a></li>
             <li>
@@ -33,28 +35,29 @@
             <li><a href="reviewers.html">Reviewers</a></li>
             <li><a href="blogs.html">Blogs</a></li>
         </ul>
+    </nav>
+    <!-- Search bar -->
+    <form action="#" id="searchbar" method="get">
+        <label>
+            Search:
+            <input type="search" name="searchkeywords" placeholder="Search" />
+            <input type="submit" name="search" value="Go" />
+        </label>
+    </form><!-- Search Bar Ends -->
 
-        <!-- Search bar -->
-        <form action="#" id="searchbar">
-            <label>
-                Search:
-                <input type="text" name="searchkeywords" value="Enter Keywords Here" />
-                <input type="submit" name="search" value="Go" />
-            </label>
-        </form>
-    </div><!-- Header Ends -->
     <hr />
 
-    <!-- Content -->
-    <div id="content">
+    <!-- Main Content -->
+    <main>
         <h1>Lemonless</h1>
-        <p>Don't Guess, Go Lemonless</p>
-    </div><!-- Content Ends -->
+        <p>This is the content</p>
+    </main><!-- Main Content Ends -->
+
     <hr />
 
     <!-- Footer -->
-    <div id="footer">
-        <ul>
+    <footer>
+        <ul id="footer-nav-links">
             <li><a href="aboutus.html">About Us</a></li>
             <li><a href="contactus.html">Contact Us</a></li>
             <li><a href="reviewer-apply.html">Apply to be a Reviewer</a></li>
@@ -71,14 +74,15 @@
             <li><a href="#"><img src="images/instagram.png" /></a></li>
             <li><a href="#"><img src="images/pinterest.png" /></a></li>
         </ul>
-        <form action="#" method="get">
-            <label>Subscribe to our Newsletter
-                <input type="text" name="email" value="Enter Email Here"/>
-                <input type="submit" name="subscribe" value="Subscribe" />
+        <form action="#" method="post">
+            <label>
+                Subscribe to our Newsletter
+                <input type="email" name="email" placeholder="yourname@email.com" />
+                <input type="submit" name="subscribe" placeholder="Subscribe" />
             </label>
         </form>
         <p>&copy; Lemonless 2016</p>
-    </div><!-- Footer Ends -->
+    </footer><!-- Footer Ends -->
 
 </body>
 </html>
