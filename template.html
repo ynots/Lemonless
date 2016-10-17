@@ -6,9 +6,10 @@
 </head>
 <body>
     <!-- Header -->
-    <div id="header">
+    <header>
         <a href="index.html"><img src="images/lemonless-logo.jpg" alt="Lemonless Logo" /></a>
-
+    </header>
+    <nav>
         <!-- Main nav bar -->
         <ul id="nav-bar">
             <li><a href="index.html">Home</a></li>
@@ -35,14 +36,15 @@
         </ul>
 
         <!-- Search bar -->
-        <form action="#" id="searchbar">
+        <form action="#" id="searchbar" method="get">
             <label>
                 Search:
-                <input type="text" name="searchkeywords" value="Enter Keywords Here" />
+                <input type="search" name="searchkeywords" placeholder="Search" />
                 <input type="submit" name="search" value="Go" />
             </label>
         </form>
-    </div><!-- Header Ends -->
+    </nav><!-- Header Ends -->
+
     <hr />
 
     <!-- Content -->
@@ -50,6 +52,7 @@
         <h1>Lemonless</h1>
         <p>This is the content</p>
     </div><!-- Content Ends -->
+
     <hr />
 
     <!-- Footer -->
@@ -71,10 +74,10 @@
             <li><a href="#"><img src="images/instagram.png" /></a></li>
             <li><a href="#"><img src="images/pinterest.png" /></a></li>
         </ul>
-        <form action="#" method="get">
+        <form action="#" method="post">
             <label>Subscribe to our Newsletter
-                <input type="text" name="email" value="Enter Email Here"/>
-                <input type="submit" name="subscribe" value="Subscribe" />
+                <input type="email" name="email" placeholder="yourname@email.com"/>
+                <input type="submit" name="subscribe" placeholder="Subscribe" />
             </label>
         </form>
         <p>&copy; Lemonless 2016</p>
