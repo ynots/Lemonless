@@ -4,12 +4,16 @@
     <title></title>
     <meta charset="utf-8" />
     <meta html-equiv="author" content="Tony Shum" />
+
+    <!--[if lt IE 9]>	<script src="js/html5shiv.js">	</script><![endif]-->
+
 </head>
 <body>
     <!-- Header -->
     <header>
         <a href="index.html"><img src="images/lemonless-logo.jpg" alt="Lemonless Logo" /></a>
     </header><!-- Header Ends -->
+
     <!-- Main nav bar -->
     <nav>
         <ul id="nav-bar">
@@ -35,7 +39,7 @@
             <li><a href="#">Reviewers</a></li>
             <li><a href="#">Blogs</a></li>
         </ul>
-    </nav>
+    </nav><!-- Main Nav Bar Ends -->
 
     <!-- Search bar -->
     <form action="#" id="searchbar" method="get">
@@ -52,13 +56,77 @@
     <main>
         <h1 id="company-title">Lemonless</h1>
         <p id="slogan">Don't Guess, Go Lemonless</p>
+
+        <!-- Feature Video Section -->
         <section id="feature-video">
             <h2 class="feature-section-title">Feature</h2>
             <article id="feature-video-article">
+
+                <!-- Video Embed -->
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/wIl2-5f8NTo" frameborder="0" allowfullscreen></iframe>
 
+                <!-- Feature Video Details -->
+                <h3 itemprop="itemReviewed" class="article-title">Summer Lesson - Virtual Reality</h3>
+                <p class="author-name">By: <span itemprop="author">Matsui Yamasaki</span></p>
+                <h4>Score</h4>
+                <p itemprop="reviewRating" class="rating">9.5</p>
+                <h4>Article Contents</h4>
+                <ol class="contents-overview">
+                    <li>Overview</li>
+                    <li>Look &Aacute; Feel</li>
+                    <li>Specifications</li>
+                    <li>Price</li>
+                    <li>Summary</li>
+                </ol>
+                <section itemprop="reviewBody" class="review-body">
+                    <p>
+                        Once it was a dream. Now reality. Or is it?
+                    </p>
+                    <p>
+                        The world of gaming has taking a sharp turn as it changes it's focus onto virtual reality (VR). This VR craze has led to
+                        many different studios in the industry to join the trend. While this technology is still in its infancy, gaming studies
+                        have not stopped to show off what they can do in their products.
+                    </p>
+                    <p>
+                        Summer Lessons is one that is particularly well crafted. Expected to launch in the coming weeks, this Japanese studio
+                        impressed everyone at E3 this year. While we only get a glimpse of the gameplay, this highly anticipated title did not
+                        disappoint.
+                    </p>
+                    <table class="review-specs">
+                        <tr>
+                            <th>Release Date</th>
+                            <th>Platform</th>
+                            <th>Genre</th>
+                            <th>Developer</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr>
+                            <td>Nov 04, 2016</td>
+                            <td>PC, PS4, XBox One</td>
+                            <td>VR Storytelling</td>
+                            <td>Konami</td>
+                            <td>$149.99</td>
+                        </tr>
+                    </table>
+                </section>
+                <p class="read-more"><a href="#">Continue To Full Article</a></p>
             </article>
-        </section>
+
+            <!-- Quick Comment Section -->
+            <section class="quick-comment">
+                <form action="#" method="post">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" placeholder="Enter Username" size="20" />
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter Password" size="20" />
+                    <label for="score">Score</label>
+                    <input type="range" name="score" min="1" max="10" />
+                    <label for="comment">Comment</label>
+                    <textarea name="comment" placeholder="Type comment here" rows="5" cols="40"></textarea>
+
+                </form>
+            </section>
+        </section><!-- Feature Video Section Ends -->
             
         <!-- Feature Articles Section -->
         <section id="featured-articles">
